@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title | default("Basic App") }}</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .container { max-width: 500px; margin: auto; }
+    header, footer { text-align: center; margin-bottom: 20px; }
+    form { display: flex; flex-direction: column; }
+    label { margin: 10px 0 5px; }
+    input { padding: 8px; font-size: 1em; }
+    button { margin-top: 15px; padding: 10px; font-size: 1em; }
+    a { text-decoration: none; color: blue; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>{{ title | default("Basic App") }}</h1>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+      <p>&copy; 2025 Wrestling Club App</p>
+    </footer>
+  </div>
+</body>
+</html>

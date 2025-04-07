@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Sign In</h2>
+  <form action="/signin" method="post">
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1234567890" required>
+    
+    <button type="submit">Send OTP</button>
+  </form>
+  <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+{% endblock %} 

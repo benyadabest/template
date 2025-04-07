@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Verify Phone</h2>
+  <p>We have sent an OTP to: <strong>{{ phone }}</strong></p>
+  <form action="/signin/verify" method="post">
+    <label for="otp">Enter OTP:</label>
+    <input type="text" id="otp" name="otp" required>
+    <button type="submit">Verify & Sign In</button>
+  </form>
+{% endblock %} 

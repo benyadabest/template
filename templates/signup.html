@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Sign Up</h2>
+  <form action="/signup" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1234567890" required>
+    
+    <button type="submit">Send OTP</button>
+  </form>
+  <p>Already have an account? If so, sign out from your session and try again.</p>
+{% endblock %}

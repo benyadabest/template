@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  {% if user %}
+    <p>What's up, {{ user.name }}!</p>
+    <p><a href="/signout">Sign Out</a></p>
+  {% else %}
+    <p>Welcome.</p>
+    <p>
+      <a href="/signup">Sign Up</a> | 
+      <a href="/signin">Sign In</a>
+    </p>
+  {% endif %}
+{% endblock %}
